@@ -1,29 +1,14 @@
 {
   "proxy_list": [
     {
-      "host": "45.70.236.194:999",
-      "country": "EC",
-      "quality": 3
-    },
-    {
       "host": "176.126.103.194:44214",
       "country": "RU",
       "quality": 4
     },
     {
-      "host": "72.10.164.178:33073",
-      "country": "CA",
-      "quality": 3
-    },
-    {
       "host": "47.90.205.231:33333",
       "country": "US",
       "quality": 3
-    },
-    {
-      "host": "192.73.244.36:80",
-      "country": "US",
-      "quality": 1
     },
     {
       "host": "4.156.78.45:80",
@@ -89,6 +74,61 @@
       "host": "41.223.119.156:3128",
       "country": "ZM",
       "quality": 4
+    },
+    {
+      "host": "41.223.119.156:3128",
+      "country": "ZM",
+      "quality": 4
+    },
+    {
+      "host": "45.136.198.40:3128",
+      "country": "BG",
+      "quality": 4
+    },
+    {
+      "host": "149.28.134.107:2020",
+      "country": "SG",
+      "quality": 3
+    },
+    {
+      "host": "103.172.157.217:58980",
+      "country": "IN",
+      "quality": 3
+    },
+    {
+      "host": "157.148.120.3:3128",
+      "country": "CN",
+      "quality": 4
+    },
+    {
+      "host": "8.212.165.33:3333",
+      "country": "PH",
+      "quality": 3
+    },
+    {
+      "host": "123.128.12.93:9050",
+      "country": "CN",
+      "quality": 3
+    },
+    {
+      "host": "104.238.228.201:3128",
+      "country": "US",
+      "quality": 4
+    },
+    {
+      "host": "36.110.143.55:8080",
+      "country": "SG",
+      "quality": 4
+    },
+    {
+      "host": "116.80.80.187:3172",
+      "country": "JP",
+      "quality": 3
+    },
+    {
+      "host": "116.80.80.192:3172",
+      "country": "JP",
+      "quality": 3
     }
   ]
 }
