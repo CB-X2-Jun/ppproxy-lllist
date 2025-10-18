@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>浏览器扩展插件安装页面 | CBX2 VPN Proxy | CB_X2_Jun</title>
+    <link rel="icon" href="https://cb-x2-jun.github.io/favicon.ico">
+    <style>
+        .container { max-width: 700px; margin: 50px auto; padding: 20px; }
+        .button { 
+            background: #4285f4; 
+            color: white; 
+            padding: 12px 24px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .info {
+            background: #cfdfff;
+            border: 1px solid #cfdaef;
+            color: #148485;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .instructions { 
+            margin-top: 20px; 
+            padding: 15px; 
+            background: #f8f9fa; 
+            border-radius: 4px;
+        }
+        .browser-tabs { margin: 20px 0; }
+        .browser-tab { 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            border: 1px solid #ddd;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .browser-tab.active { 
+            background: #4285f4; 
+            color: white;
+            border-color: #4285f4;
+        }
+        .browser-steps { 
+            display: none;
+            margin-top: 15px;
+        }
+        .browser-steps.active {
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cb-x2-jun.github.io/CBCaptcha/cbcaptcha.css">
+    <script src="https://cb-x2-jun.github.io/CBCaptcha/cbcaptcha.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>安装浏览器扩展插件 - CBX2 VPN Proxy</h1>
+        
+        <div class="info">
+            <strong>✅ 信息：</strong>
+            <p>描述：CBX2 VPN Proxy by CB_X2_Jun. 中文发布版本.</p>
+            <p>支持的语言：简体中文（zh_CN）.</p>
+            <p>版本：v1.33.2.182</p>
+            <p>作者：CB_X2_Jun</p>
+        </div>
+        
+        <div class="warning">
+            <strong>⚠️ 重要提示：</strong>
+            <p>由于浏览器安全限制，直接安装.crx文件会被禁用。建议使用下方的ZIP文件安装方法。</p>
+            <p>本扩展使用的代理列表：<a href="https://cb-x2-jun.github.io/ppproxy-lllist/pxy.json" target="_blank">点击此处</a>；本列表会不断由 CB_X2_Jun 手动更新，并添加新节点。由于是搜集的免费节点，很可能不稳定。如果有不可用的情况，欢迎到 <a href="https://github.com/CB-X2-Jun/ppproxy-lllist" target="_blank">GitHub Repo</a> 提交 Issue。</p>
+        </div>
+        
+        <div class="browser-tabs">
+            <div class="browser-tab active" data-browser="edge">Microsoft Edge - 微软 Edge 浏览器</div>
+            <div class="browser-tab" data-browser="chrome">Google Chrome - 谷歌 Chrome 浏览器</div>
+        </div>
+        
+        <div>
+            <button class="button" id="downloadZip">下载ZIP文件（推荐）</button>
+            <button class="button" id="downloadCrx" style="background: #aca5ad;">下载CRX文件（不推荐）</button>
+        </div>
+        
+        <div class="instructions">
+            <h3>安装指引：</h3>
+            
+            <!-- Chrome 安装步骤 -->
+            <div id="chrome-steps" class="browser-steps active">
+                <ol>
+                    <li>点击上方的 <strong>"下载ZIP / CRX文件"</strong> 按钮</li>
+                    <li>在文件资源管理器找到下载的文件</li>
+                    <li>打开Chrome，在地址栏输入: <strong>chrome://extensions/</strong></li>
+                    <li>开启右上角的 <strong>"开发者模式"</strong></li>
+                    <li>把ZIP / CRX文件<strong>拖拽进"扩展程序"页面</strong></li>
+                    <li>扩展即可正常使用</li>
+                </ol>
+            </div>
+            
+            <!-- Edge 安装步骤 -->
+            <div id="edge-steps" class="browser-steps">
+                <ol>
+                    <li>点击上方的 <strong>"下载ZIP / CRX文件"</strong> 按钮</li>
+                    <li>在文件资源管理器找到下载的文件</li>
+                    <li>打开Edge，在地址栏输入: <strong>edge://extensions/</strong></li>
+                    <li>开启左下角的 <strong>"开发人员模式"</strong></li>
+                    <li>把ZIP / CRX文件<strong>拖拽进"扩展"页面</strong></li>
+                    <li>扩展即可正常使用</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 切换浏览器标签
+        document.querySelectorAll('.browser-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.browser-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const browser = this.dataset.browser;
+                document.querySelectorAll('.browser-steps').forEach(steps => {
+                    steps.classList.remove('active');
+                });
+                document.getElementById(`${browser}-steps`).classList.add('active');
+            });
+        });
+
+        // 下载ZIP文件
+        document.getElementById('downloadZip').addEventListener('click', function() {
+            const zipUrl = 'https://cb-x2-jun.github.io/ppproxy-lllist/cbx2vpnproxy.zip';
+            
+            const downloadLink = document.createElement('a');
+            downloadLink.href = zipUrl;
+            downloadLink.download = 'extension.zip';
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        });
+
+        // 下载CRX文件（不推荐，但提供选项）
+        document.getElementById('downloadCrx').addEventListener('click', function() {
+            const crxUrl = 'https://cb-x2-jun.github.io/ppproxy-lllist/cbx2vpnproxy.crx';
+            
+            const downloadLink = document.createElement('a');
+            downloadLink.href = crxUrl;
+            downloadLink.download = 'extension.crx';
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+            
+            alert('注意：CRX文件安装后会被浏览器禁用。建议使用ZIP文件安装。');
+        });
+    </script>
+</body>
+</html>
