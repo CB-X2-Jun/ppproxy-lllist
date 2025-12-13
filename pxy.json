@@ -494,6 +494,51 @@
       "host": "41.65.160.173:1977",
       "country": "EG",
       "quality": 4
+    },
+    {
+      "host": "72.10.160.170:27889",
+      "country": "US",
+      "quality": 4
+    },
+    {
+      "host": "206.189.88.243:8080",
+      "country": "SG",
+      "quality": 4
+    },
+    {
+      "host": "18.202.158.161:80",
+      "country": "IE",
+      "quality": 4
+    },
+    {
+      "host": "113.177.204.26:8080",
+      "country": "VN",
+      "quality": 4
+    },
+    {
+      "host": "159.65.11.208:8080",
+      "country": "SG",
+      "quality": 4
+    },
+    {
+      "host": "82.115.24.134:9090",
+      "country": "EU",
+      "quality": 4
+    },
+    {
+      "host": "173.249.205.117:8888",
+      "country": "CA",
+      "quality": 3
+    },
+    {
+      "host": "52.203.62.58:80",
+      "country": "US",
+      "quality": 3
+    },
+    {
+      "host": "20.2.144.174:9998",
+      "country": "HK",
+      "quality": 4
     }
   ]
 }
