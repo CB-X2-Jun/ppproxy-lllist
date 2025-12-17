@@ -516,11 +516,6 @@
       "quality": 4
     },
     {
-      "host": "82.115.24.134:9090",
-      "country": "EU",
-      "quality": 4
-    },
-    {
       "host": "173.249.205.117:8888",
       "country": "CA",
       "quality": 3
@@ -558,6 +553,36 @@
     {
       "host": "103.176.96.178:1111",
       "country": "ID",
+      "quality": 3
+    },
+    {
+      "host": "115.114.77.133:9090",
+      "country": "IN",
+      "quality": 4
+    },
+    {
+      "host": "78.13.218.250:3128",
+      "country": "MX",
+      "quality": 4
+    },
+    {
+      "host": "13.211.26.10:80",
+      "country": "AU",
+      "quality": 4
+    },
+    {
+      "host": "190.83.15.2:999",
+      "country": "EC",
+      "quality": 3
+    },
+    {
+      "host": "47.81.14.7:3128",
+      "country": "TH",
+      "quality": 3
+    },
+    {
+      "host": "177.234.217.84:999",
+      "country": "EC",
       "quality": 3
     }
   ]
