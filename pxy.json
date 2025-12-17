@@ -21,11 +21,6 @@
       "quality": 4
     },
     {
-      "host": "8.219.97.248:80",
-      "country": "SG",
-      "quality": 3
-    },
-    {
       "host": "47.74.226.8:5001",
       "country": "SG",
       "quality": 3
@@ -539,6 +534,31 @@
       "host": "20.2.144.174:9998",
       "country": "HK",
       "quality": 4
+    },
+    {
+      "host": "217.76.55.8:8888",
+      "country": "DE",
+      "quality": 3
+    },
+    {
+      "host": "206.189.88.243:8080",
+      "country": "SG",
+      "quality": 4
+    },
+    {
+      "host": "104.248.151.64:8080",
+      "country": "SG",
+      "quality": 4
+    },
+    {
+      "host": "36.110.143.55:8080",
+      "country": "SG",
+      "quality": 4
+    },
+    {
+      "host": "103.176.96.178:1111",
+      "country": "ID",
+      "quality": 3
     }
   ]
 }
