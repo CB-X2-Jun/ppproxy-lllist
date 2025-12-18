@@ -614,6 +614,46 @@
       "host": "43.225.150.97:1120",
       "country": "BD",
       "quality": 3
+    },
+    {
+      "host": "194.87.77.22:80",
+      "country": "SE",
+      "quality": 3
+    },
+    {
+      "host": "20.80.217.164:3128",
+      "country": "US",
+      "quality": 4
+    },
+    {
+      "host": "68.235.35.171:3128",
+      "country": "US",
+      "quality": 4
+    },
+    {
+      "host": "162.240.154.26:3128",
+      "country": "US",
+      "quality": 4
+    },
+    {
+      "host": "200.174.198.32:8888",
+      "country": "BR",
+      "quality": 4
+    },
+    {
+      "host": "200.24.159.230:8080",
+      "country": "EC",
+      "quality": 3
+    },
+    {
+      "host": "222.127.206.145:8085",
+      "country": "PH",
+      "quality": 3
+    },
+    {
+      "host": "45.173.12.141:1994",
+      "country": "CO",
+      "quality": 3
     }
   ]
 }
