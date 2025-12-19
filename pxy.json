@@ -654,6 +654,21 @@
       "host": "45.173.12.141:1994",
       "country": "CO",
       "quality": 3
+    },
+    {
+      "host": "94.131.8.178:8889",
+      "country": "IE",
+      "quality": 4
+    },
+    {
+      "host": "94.131.8.178:8884",
+      "country": "GR",
+      "quality": 3
+    },
+    {
+      "host": "94.131.8.178:8883",
+      "country": "DE",
+      "quality": 3
     }
   ]
 }
