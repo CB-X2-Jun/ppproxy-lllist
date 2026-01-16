@@ -739,16 +739,6 @@
       "host": "59.36.239.108:21133",
       "country": "CN",
       "quality": 4
-    },
-    {
-      "host": "38.156.14.34:999",
-      "country": "DO",
-      "quality": 3
-    },
-    {
-      "host": "38.156.14.34:999",
-      "country": "DO",
-      "quality": 3
     }
   ]
 }
