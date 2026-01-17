@@ -739,6 +739,26 @@
       "host": "59.36.239.108:21133",
       "country": "CN",
       "quality": 4
+    },
+    {
+      "host": "102.212.44.151:12354",
+      "country": "ZA",
+      "quality": 3
+    },
+    {
+      "host": "103.122.0.162:8181",
+      "country": "ID",
+      "quality": 3
+    },
+    {
+      "host": "101.255.137.49:80",
+      "country": "ID",
+      "quality": 3
+    },
+    {
+      "host": "102.213.216.98:8080",
+      "country": "KE",
+      "quality": 3
     }
   ]
 }
